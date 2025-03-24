@@ -10,7 +10,7 @@ interface ProgressBarProps {
 const ProgressBar: React.FC<ProgressBarProps> = ({ value, className }) => {
   return (
     <div className={className}>
-      <Progress value={value} className="h-2" />
+      <Progress value={value} className="h-2 bg-gray-100 dark:bg-gray-800" />
       <div className="flex justify-between mt-1 text-xs text-muted-foreground">
         <span>{value}% complete</span>
       </div>
