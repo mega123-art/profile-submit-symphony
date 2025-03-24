@@ -8,6 +8,7 @@ export interface Student {
   year: string;
   gpa: number;
   credits: number;
+  enrollmentNumber: string;
 }
 
 export interface Assignment {
@@ -29,7 +30,8 @@ export const studentData: Student = {
   major: 'Computer Science',
   year: 'Junior',
   gpa: 3.8,
-  credits: 78
+  credits: 78,
+  enrollmentNumber: 'EN2023-78901'
 };
 
 export const assignmentsData: Assignment[] = [
