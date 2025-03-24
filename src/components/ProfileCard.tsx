@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Student } from '../data/mockData';
-import { GraduationCap, Mail, User, IdCard, Star } from 'lucide-react';
+import { GraduationCap, Mail, User, IdCard, BookOpen } from 'lucide-react';
 
 interface ProfileCardProps {
   student: Student;
@@ -56,10 +56,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ student }) => {
           </div>
           
           <div className="flex items-center gap-2">
-            <Star className="h-4 w-4 text-yellow-500" />
+            <BookOpen className="h-4 w-4 text-muted-foreground" />
             <div>
-              <p className="text-sm font-medium">GPA: {student.gpa.toFixed(1)}</p>
-              <p className="text-xs text-muted-foreground">Credits: {student.credits}</p>
+              <p className="text-sm font-medium">Credits: {student.credits}</p>
             </div>
           </div>
         </div>
